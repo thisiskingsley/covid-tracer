@@ -6,7 +6,7 @@ import { Transition } from 'semantic-ui-react';
 const today = new Date();
 const yesterday = new Date(today);
 
-yesterday.setDate(yesterday.getDate() - 2);
+yesterday.setDate(yesterday.getDate() - 3);
 const datetime = yesterday.toISOString().slice(0, 10).replace('2021-',"") + "-" + yesterday.getFullYear();
 
 class DataTable extends React.Component {

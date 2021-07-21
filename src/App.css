@@ -1,21 +1,33 @@
 @media only screen and (max-width: 768px) {
-    #state-flag {
-        display: none;
-    }
+	#state-flag {
+		display: none;
+	}
 }
 
 #dropdown {
-    position: absolute;
-    top: 43%;
-    left: 25%;
-    z-index: 1;
-    width: 40%;
+	position: absolute;
+	top: 43%;
+	left: 23%;
+	z-index: 1;
+	width: 43%;
+	text-align: center;
+	border: 2px solid rgba(34, 36, 38, 0.15);
+	box-shadow: 10px 5px 5px darkgray;
+}
+
+#dropdown:hover {
+	border: 2px solid #96c8da;
+}
+
+#dropdown div .item {
+	text-align: center;
 }
 
 #data-table {
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    z-index: 1;
-    width: 30%;    
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	z-index: 1;
+	width: 30%;
+	box-shadow: 10px 5px 5px darkgray;
 }
