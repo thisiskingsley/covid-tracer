@@ -2,6 +2,9 @@
 	#state-flag {
 		display: none;
 	}
+	#dropdown.selection.dropdown .menu {
+		max-height: 13rem;
+	}
 }
 
 #dropdown {

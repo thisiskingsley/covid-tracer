@@ -6,7 +6,7 @@ class HomePage extends React.Component {
 		return (
 			<div className="ui sizer vertical segment">
 				<div className="ui huge center aligned header">Covid Data By State</div>
-				<div id="maybe">{this.props.children}</div>
+				<div>{this.props.children}</div>
 				<img alt="Map of US" className="ui fluid image" src="/images/usa.jpg" />
 			</div>
 		);
