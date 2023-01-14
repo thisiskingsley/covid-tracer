@@ -4,7 +4,7 @@ import history from '../history';
 const today = new Date();
 const yesterday = new Date(today);
 
-yesterday.setDate(yesterday.getDate() - 3);
+yesterday.setDate(yesterday.getDate() - 100);
 const datetime = yesterday.toISOString().slice(0, 11) + '00:00:00.000';
 
 export const fetchCovid = value => async dispatch => {

@@ -49,7 +49,9 @@ class Dropdown extends React.Component {
 			<div
 				id="dropdown"
 				onClick={this.onDropdownClick}
-				className={`ui selection dropdown ${this.props.open ? 'visible active' : ''}`}
+				className={`ui selection dropdown ${
+					this.props.open ? 'visible active' : ''
+				}`}
 				ref={this.myRef}
 			>
 				<input type="hidden" name="user" />
