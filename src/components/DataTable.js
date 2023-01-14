@@ -3,13 +3,8 @@ import { connect } from 'react-redux';
 import { Transition } from 'semantic-ui-react';
 
 const today = new Date();
-const yesterday = new Date(today);
-
-yesterday.setDate(yesterday.getDate() - 3);
 const datetime =
-	yesterday.toISOString().slice(0, 10).replace('2023-', '') +
-	'-' +
-	yesterday.getFullYear();
+	today.toISOString().slice(0, 10).replace('2023-', '') + '-' + today.getFullYear();
 
 class DataTable extends React.Component {
 	state = { visible: false };
