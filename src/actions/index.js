@@ -5,14 +5,13 @@ const today = new Date();
 const yesterday = new Date(today);
 
 yesterday.setDate(yesterday.getDate() - 100);
-const datetime = yesterday.toISOString().slice(0, 11) + '00:00:00.000';
+// const datetime = yesterday.toISOString().slice(0, 11) + '00:00:00.000';
 
 export const fetchCovid = value => async dispatch => {
 	if (!value) {
 		return null;
 	} else {
 		const response = await axios.get(
-			// `https://data.cdc.gov/resource/9mfq-cb36.json?submission_date=${datetime}&state=${value}`
 			// `https://data.cdc.gov/resource/pwn4-m3yp.json?date_updated=${datetime}&state=${value}`
 			`https://data.cdc.gov/resource/pwn4-m3yp.json?date_updated=2023-05-11T00:00:00.000&state=${value}`
 		);
