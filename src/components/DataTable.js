@@ -4,7 +4,7 @@ import { Transition } from 'semantic-ui-react';
 
 const today = new Date();
 const datetime =
-	today.toISOString().slice(0, 10).replace('2023-', '') + '-' + today.getFullYear();
+	today.toISOString().slice(0, 10).replace('2024-', '') + '-' + today.getFullYear();
 
 class DataTable extends React.Component {
 	state = { visible: false };
@@ -31,7 +31,7 @@ class DataTable extends React.Component {
 						</tr>
 						<tr>
 							<td>New Cases</td>
-							<td>{this.props.covid.new_case}</td>
+							<td>{this.props.covid.new_cases}</td>
 						</tr>
 						<tr>
 							<td>Total Cases</td>
@@ -39,7 +39,7 @@ class DataTable extends React.Component {
 						</tr>
 						<tr>
 							<td>Total Death</td>
-							<td>{this.props.covid.tot_death}</td>
+							<td>{this.props.covid.tot_deaths}</td>
 						</tr>
 					</tbody>
 				</table>

@@ -12,7 +12,9 @@ export const fetchCovid = value => async dispatch => {
 		return null;
 	} else {
 		const response = await axios.get(
-			`https://data.cdc.gov/resource/9mfq-cb36.json?submission_date=${datetime}&state=${value}`
+			// `https://data.cdc.gov/resource/9mfq-cb36.json?submission_date=${datetime}&state=${value}`
+			// `https://data.cdc.gov/resource/pwn4-m3yp.json?date_updated=${datetime}&state=${value}`
+			`https://data.cdc.gov/resource/pwn4-m3yp.json?date_updated=2023-05-11T00:00:00.000&state=${value}`
 		);
 
 		dispatch({ type: 'FETCH_COVID', payload: response.data[0] });
